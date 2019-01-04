@@ -1,0 +1,326 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF_030084E570ACA91246B9714E0342318E /* Pytorch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_0AD4619185FB3BCA9F50A157601F0183 /* Pytorch.swift */; };
+		BF_0307B00A801EFA7962BD5A7A286213B9 /* PythonClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_348A45ABDC4DFA0EB91BF73E85BDC8C8 /* PythonClass.swift */; };
+		BF_0EBAEA2FCE0272FF9805B38C813498C0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_CE80D3F1FE70659CD43442D16021351B /* main.swift */; };
+		BF_21A4AE44AA2E771B0F642047BE9488C6 /* libtensorflow.so in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_83B164D3A14AA518202F02E0211B5A0B /* libtensorflow.so */; };
+		BF_3C2CBB45BD21A25171C6D7309719BFEE /* libtensorflow_framework.so in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_B41F6D739A11C9A5479C899D2D14D30B /* libtensorflow_framework.so */; };
+		BF_44CFD33BD77E2ABF2B3792C50927B965 /* libpython2.7.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_545E27E23CB45CB5CE3D380B289A693E /* libpython2.7.tbd */; };
+		BF_9654BB848A454052BFBBD94067A83561 /* NeuralNet.py in Resources */ = {isa = PBXBuildFile; fileRef = FR_5A03430B548D4BDAB6DDFE7C3347C36D /* NeuralNet.py */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FR_0AD4619185FB3BCA9F50A157601F0183 /* Pytorch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pytorch.swift; sourceTree = "<group>"; };
+		FR_348A45ABDC4DFA0EB91BF73E85BDC8C8 /* PythonClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PythonClass.swift; sourceTree = "<group>"; };
+		FR_545E27E23CB45CB5CE3D380B289A693E /* libpython2.7.tbd */ = {isa = PBXFileReference; path = libpython2.7.tbd; sourceTree = "<group>"; };
+		FR_5A03430B548D4BDAB6DDFE7C3347C36D /* NeuralNet.py */ = {isa = PBXFileReference; path = NeuralNet.py; sourceTree = "<group>"; };
+		FR_83B164D3A14AA518202F02E0211B5A0B /* libtensorflow.so */ = {isa = PBXFileReference; name = libtensorflow.so; path = "/Library/Developer/Toolchains/swift-latest/usr/lib/swift/macosx/libtensorflow.so"; sourceTree = "<group>"; };
+		FR_B41F6D739A11C9A5479C899D2D14D30B /* libtensorflow_framework.so */ = {isa = PBXFileReference; name = libtensorflow_framework.so; path = "/Library/Developer/Toolchains/swift-latest/usr/lib/swift/macosx/libtensorflow_framework.so"; sourceTree = "<group>"; };
+		FR_CE80D3F1FE70659CD43442D16021351B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		FR_DA0498000DD2003A9F9EC7D1D03D62A0 /* SwiftTorch */ = {isa = PBXFileReference; includeInIndex = 0; path = SwiftTorch; sourceTree = BUILT_PRODUCTS_DIR; };
+		FR_E18E7DEAFF9D20C77E28C5D8AB792B75 /* debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = debug.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBP_7257C58B098F4BABE0DF01C05F976BB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF_3C2CBB45BD21A25171C6D7309719BFEE /* libtensorflow_framework.so in Frameworks */,
+				BF_21A4AE44AA2E771B0F642047BE9488C6 /* libtensorflow.so in Frameworks */,
+				BF_44CFD33BD77E2ABF2B3792C50927B965 /* libpython2.7.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		G_337A41F78779A8AFCA090939A4C544AA /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				FR_CE80D3F1FE70659CD43442D16021351B /* main.swift */,
+				FR_5A03430B548D4BDAB6DDFE7C3347C36D /* NeuralNet.py */,
+				FR_348A45ABDC4DFA0EB91BF73E85BDC8C8 /* PythonClass.swift */,
+				FR_0AD4619185FB3BCA9F50A157601F0183 /* Pytorch.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		G_5FB53537BEA51C3CC47A021D33ACE796 = {
+			isa = PBXGroup;
+			children = (
+				G_337A41F78779A8AFCA090939A4C544AA /* Sources */,
+				G_7491C52C181E3B71A1F2496C5BA85299 /* SwiftTorch */,
+				G_DD6F7F2F21113F2AC641FB09418CFFA9 /* Frameworks */,
+				G_6D5A80F667FD6387740EF044B5D3DD88 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		G_6D5A80F667FD6387740EF044B5D3DD88 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FR_DA0498000DD2003A9F9EC7D1D03D62A0 /* SwiftTorch */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		G_7491C52C181E3B71A1F2496C5BA85299 /* SwiftTorch */ = {
+			isa = PBXGroup;
+			children = (
+				FR_E18E7DEAFF9D20C77E28C5D8AB792B75 /* debug.xcconfig */,
+			);
+			name = SwiftTorch;
+			path = /Users/admin/Documents/gitWorkspace/SwiftTorch;
+			sourceTree = "<group>";
+		};
+		G_DD6F7F2F21113F2AC641FB09418CFFA9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FR_545E27E23CB45CB5CE3D380B289A693E /* libpython2.7.tbd */,
+				FR_B41F6D739A11C9A5479C899D2D14D30B /* libtensorflow_framework.so */,
+				FR_83B164D3A14AA518202F02E0211B5A0B /* libtensorflow.so */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		NT_E2C5219C094EE18E751A0ABB0AFDCE89 /* SwiftTorch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CL_6D67751FA230AF77A2CE922C953924CA /* Build configuration list for PBXNativeTarget "SwiftTorch" */;
+			buildPhases = (
+				SBP_1394A943D45FCEDA60C9C69D59422D88 /* Sources */,
+				RBP_53AF4A850A8F268A57E307C1065B1AEA /* Resources */,
+				FBP_7257C58B098F4BABE0DF01C05F976BB8 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftTorch;
+			productName = SwiftTorch;
+			productReference = FR_DA0498000DD2003A9F9EC7D1D03D62A0 /* SwiftTorch */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		P_0DE580A277BF2EDFA40CE8B6D9DDF203 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+			};
+			buildConfigurationList = CL_AA44FD1C0B12929B9C746BABC7D4A10A /* Build configuration list for PBXProject "SwiftTorch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = G_5FB53537BEA51C3CC47A021D33ACE796;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				NT_E2C5219C094EE18E751A0ABB0AFDCE89 /* SwiftTorch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		RBP_53AF4A850A8F268A57E307C1065B1AEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF_9654BB848A454052BFBBD94067A83561 /* NeuralNet.py in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		SBP_1394A943D45FCEDA60C9C69D59422D88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF_0307B00A801EFA7962BD5A7A286213B9 /* PythonClass.swift in Sources */,
+				BF_030084E570ACA91246B9714E0342318E /* Pytorch.swift in Sources */,
+				BF_0EBAEA2FCE0272FF9805B38C813498C0 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BC_163191A9094CF02B0971A79B1C09FF9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\".\"",
+					"\"/Library/Developer/Toolchains/swift-latest/usr/lib/swift/macosx\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.swiftTorch.SwiftTorch;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BC_1EF000D381C09BDCB240332AF12485F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\".\"",
+					"\"/Library/Developer/Toolchains/swift-latest/usr/lib/swift/macosx\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.swiftTorch.SwiftTorch;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BC_DD2BFA1631D91F9BFE969710296B585A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FR_E18E7DEAFF9D20C77E28C5D8AB792B75 /* debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		BC_FD87C9B2BA4A86656C908F01ED90899A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FR_E18E7DEAFF9D20C77E28C5D8AB792B75 /* debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CL_6D67751FA230AF77A2CE922C953924CA /* Build configuration list for PBXNativeTarget "SwiftTorch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC_1EF000D381C09BDCB240332AF12485F1 /* Debug */,
+				BC_163191A9094CF02B0971A79B1C09FF9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "";
+		};
+		CL_AA44FD1C0B12929B9C746BABC7D4A10A /* Build configuration list for PBXProject "SwiftTorch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC_DD2BFA1631D91F9BFE969710296B585A /* Debug */,
+				BC_FD87C9B2BA4A86656C908F01ED90899A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = P_0DE580A277BF2EDFA40CE8B6D9DDF203 /* Project object */;
+}

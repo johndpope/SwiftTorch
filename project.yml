@@ -1,0 +1,19 @@
+name: SwiftTorch
+options:
+  bundleIdPrefix: com.swiftTorch
+configFiles:
+  Debug: debug.xcconfig
+  Release: debug.xcconfig
+
+targets:
+  SwiftTorch:
+    type: tool
+    platform: macOS
+    deploymentTarget: "10.13"
+    sources: 
+        - Sources
+    dependencies:
+      - framework: /Library/Developer/Toolchains/swift-latest/usr/lib/swift/macosx/libtensorflow_framework.so
+      - framework: /Library/Developer/Toolchains/swift-latest/usr/lib/swift/macosx/libtensorflow.so
+      - framework: libpython2.7.tbd
+    SUPPORTED_PLATFORMS: macosx
