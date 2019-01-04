@@ -4,13 +4,16 @@
 This project is based on Swift for Tensorflow. To install Swift for Tensorflow visit [https://github.com/tensorflow/swift/](https://github.com/tensorflow/swift/blob/master/Installation.md).
 /Library/Developer/Toolchains/swift-latest/usr/lib/swift/macosx
 
-
-Creating new xcode Projects using XcodeGen      
+**XcodeGen**
+Creating new xcode Projects using XcodeGen (project.yml/debug.xcconfig)      
 https://github.com/johndpope/swift-models/tree/stable/Inference     
 ![Screenshot](Images/xcodegen.png)
+ 1. In the menu bar, select `File > Project Settings...`.
+ 2. Then, select `Legacy Build System` for Build Settings and click `Done`.
+ 
 
 ## Install OpenAI Gym
-Take the following steps to install OpenAI Gym using Virtualenv:
+Take the following steps to install OpenAI Gym using Conda:
 
       
      
@@ -53,6 +56,8 @@ pip install torch
 pip install torchvision
 
 ```
+
+
      
  // IMPORTANT - hack required to get  torchvision   to load testing / training data used in pytorch.swift
  // in your Users/admin/miniconda3/envs/gymai2/lib/python2.7/site-packages/
@@ -65,17 +70,13 @@ schema >  Run > Pre-actions
 ![alt text](https://user-images.githubusercontent.com/289994/45383211-8f819e00-b5d8-11e8-9d12-b715a79005f7.png)
 
 ```
-source activate gymai
+conda activate gymai2
 ```
 
 
 (iterm2 / to see which python environment is activated / as well as which git branch you're on - I recommend using zsh / oh-my-zsh https://github.com/robbyrussell/oh-my-zsh)
 ![alt text](https://user-images.githubusercontent.com/289994/45244296-37d7ef80-b2c5-11e8-81c3-e8e59afe234f.png)
 
-=======
-## Requirements
-* Xcode 10.0 beta or later
-* Swift for TensorFlow 2018-12-04
 
 
 **Troubleshooting**    
