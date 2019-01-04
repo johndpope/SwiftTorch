@@ -11,6 +11,7 @@ To install Swift for Tensorflow visit [https://github.com/tensorflow/swift/](htt
 There's a bunch of flags / settings needed to get up tensorflow up and and running with new xcode executable project. 
 For new projects you can run
 ```shell
+ brew install XcodeGen
  XcodeGen 
  ```
  to spit out new xcode projects. Just update the Sources.  
