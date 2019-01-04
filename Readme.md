@@ -80,6 +80,9 @@ conda activate gymai2
 
 ![Screenshot](Images/SwiftTorch.png)
 
+![Screenshot](Images/NeuralNet.png)
+
+
 
 **Troubleshooting**    
 if you see     
