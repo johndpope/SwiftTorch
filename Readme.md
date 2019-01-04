@@ -1,4 +1,4 @@
-#  SwiftTorch
+#  SwiftPyTorch
 
 ## Install Swift for Tensorflow
 This project is based on Swift for Tensorflow. To install Swift for Tensorflow visit [https://github.com/tensorflow/swift/](https://github.com/tensorflow/swift/blob/master/Installation.md).
