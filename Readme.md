@@ -53,13 +53,14 @@ export PATH="/Users/YOURUSERNAMENAMEHERE/miniconda3/bin:$PATH"
 // https://conda.io/miniconda.html 
 conda create -n gymai2  python=2.7.9
 conda activate gymai2
+
 pip install --upgrade pip
 pip install "gym[atari]"
 pip install sklearn
 
 # for pytorch
+conda install -c pytorch pytorch
 pip install Cython 
-pip install torch
 pip install torchvision
 
 ```
