@@ -14,7 +14,7 @@ https://github.com/johndpope/swift-models/tree/stable/Inference
 
 ## Install OpenAI Gym
 Take the following steps to install OpenAI Gym using Conda:
-
+![Screenshot](Images/Atari.jpg)
       
      
 ## Install these for gymai
