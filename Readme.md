@@ -88,7 +88,7 @@ pip install torchvision
  unzip files to site-packages
 3. You will need to update variable customClassPath in PyTorch.swift to point to  hard coded path of project Sources folder. Why? The app at runtime will read in the NeuralNet.py class
      ![Screenshot](Images/CustomClassPath.png)**NeuralNet.py**    
-<img src="Images/NeuralNet.png" width="400">
+<img src="Images/NeuralNet2.png" width="400">
 
 
 
