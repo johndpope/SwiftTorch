@@ -8,13 +8,18 @@ To install Swift for Tensorflow visit [https://github.com/tensorflow/swift/](htt
 
 
 **Programatically Generating Xcode Projects with default settings / flags**    
-There's a bunch of flags / settings needed to get up and running with new xcode executable project. These two files - project.yml/debug.xcconfig contain all settings. Use XcodeGen to spit out new xcode projects.  
+There's a bunch of flags / settings needed to get up tensorflow up and and running with new xcode executable project. 
+For new projects you can run
+```shell
+ XcodeGen 
+ ```
+ to spit out new xcode projects. Just update the Sources.  
 https://github.com/johndpope/swift-models/tree/stable/Inference     
 
 <img src="Images/debug.png" width="800">
 <img src="Images/project.png" width="800">
-<img src="Images/xcodegen.png" width="800">
 
+Unfortunately - there's still a manual step to fix build system.
 1. In the menu bar, select `File > Project Settings...`.
 2. Then, select `Legacy Build System` for Build Settings and click `Done`.
  
@@ -25,10 +30,12 @@ Take the following steps to install OpenAI Gym using Miniconda:
       
      
 ## Install these for gymai
-(if sdl2 fails / try proceeding without it)
+
 ```shell
 brew install cmake boost boost-python sdl2 swig wget
 ```
+(if sdl2 fails / try proceeding without it)
+
 
 
 <img src="Images/miniConda.png" width="200">
@@ -52,7 +59,7 @@ export PATH="/Users/YOURUSERNAMENAMEHERE/miniconda3/bin:$PATH"
 ```
 
      
-**Install GymAI / pyTorch**    
+**Install GymAI / pyTorch / sklearn**    
   
 ```shell
 // https://conda.io/miniconda.html 
@@ -71,12 +78,12 @@ pip install torchvision
 
 
 **IMPORTANT**  
-1. CRITICAL  be sure to use python 2.7.9 to avoid missing python symbols  (__PyCodecInfo_GetIncrementalDecoder)   
+1.  Be sure to use python 2.7.9 to avoid missing python symbols  (__PyCodecInfo_GetIncrementalDecoder)   
 
 2. There's a hack required to get  torchvision   to load testing / training data used in Pytorch.swift
- in your Users/admin/miniconda3/envs/gymai2/lib/python2.7/site-packages/
+ in your Users/USERNAMEHERE/miniconda3/envs/gymai2/lib/python2.7/site-packages/
   rename torchvision-0.2.1-py2.7.egg file to .zip - extract out torch ision folder to site-packages
-3. You will need to update customClassPath in PyTorch.swift to point to  hard coded path of project Sources folder.
+3. You will need to update variable customClassPath in PyTorch.swift to point to  hard coded path of project Sources folder.
      ![Screenshot](Images/CustomClassPath.png)
      
 To wire up xcode to connect the conda environment / we need to add pre-action to xcode schema. 
@@ -87,7 +94,7 @@ conda activate gymai2
 ```
 
 
-<img src="Images/SwiftTorch.png" width="400">
+<img src="Images/SwiftTorch.png" width="800">
 
 
 
