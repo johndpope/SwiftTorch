@@ -17,3 +17,17 @@ targets:
       - framework: /Library/Developer/Toolchains/swift-latest/usr/lib/swift/macosx/libtensorflow.so
       - framework: libpython2.7.tbd
     SUPPORTED_PLATFORMS: macosx
+
+schemes:
+  SwiftTorch:
+    build:
+      parallelizeBuild: true
+      buildImplicitDependencies: true
+      targets:
+        SwiftTorch: all
+    run:
+      targets:
+        SwiftTorch: all
+      preActions:
+        - script: conda activate gymai2
+          settingsTarget: SwiftTorch
