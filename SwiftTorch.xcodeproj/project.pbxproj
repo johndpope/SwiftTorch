@@ -14,6 +14,7 @@
 		BF_3C2CBB45BD21A25171C6D7309719BFEE /* libtensorflow_framework.so in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_B41F6D739A11C9A5479C899D2D14D30B /* libtensorflow_framework.so */; };
 		BF_44CFD33BD77E2ABF2B3792C50927B965 /* libpython2.7.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_545E27E23CB45CB5CE3D380B289A693E /* libpython2.7.tbd */; };
 		BF_9654BB848A454052BFBBD94067A83561 /* NeuralNet.py in Resources */ = {isa = PBXBuildFile; fileRef = FR_5A03430B548D4BDAB6DDFE7C3347C36D /* NeuralNet.py */; };
+		BF_A90FCCC49735D65CA0132F9D76644C76 /* NeuralNet.pyc in Resources */ = {isa = PBXBuildFile; fileRef = FR_F692611DB1D4EE1F7200922430DD4B54 /* NeuralNet.pyc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		FR_CE80D3F1FE70659CD43442D16021351B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		FR_DA0498000DD2003A9F9EC7D1D03D62A0 /* SwiftTorch */ = {isa = PBXFileReference; includeInIndex = 0; path = SwiftTorch; sourceTree = BUILT_PRODUCTS_DIR; };
 		FR_E18E7DEAFF9D20C77E28C5D8AB792B75 /* debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = debug.xcconfig; sourceTree = "<group>"; };
+		FR_F692611DB1D4EE1F7200922430DD4B54 /* NeuralNet.pyc */ = {isa = PBXFileReference; path = NeuralNet.pyc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			children = (
 				FR_CE80D3F1FE70659CD43442D16021351B /* main.swift */,
 				FR_5A03430B548D4BDAB6DDFE7C3347C36D /* NeuralNet.py */,
+				FR_F692611DB1D4EE1F7200922430DD4B54 /* NeuralNet.pyc */,
 				FR_348A45ABDC4DFA0EB91BF73E85BDC8C8 /* PythonClass.swift */,
 				FR_0AD4619185FB3BCA9F50A157601F0183 /* Pytorch.swift */,
 			);
@@ -140,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF_9654BB848A454052BFBBD94067A83561 /* NeuralNet.py in Resources */,
+				BF_A90FCCC49735D65CA0132F9D76644C76 /* NeuralNet.pyc in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
