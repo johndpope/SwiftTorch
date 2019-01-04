@@ -10,7 +10,11 @@ To install Swift for Tensorflow visit [https://github.com/tensorflow/swift/](htt
 **Programatically Generating Xcode Projects with default settings / flags**    
 There's a bunch of flags / settings needed to get up and running with new xcode executable project. These two files - project.yml/debug.xcconfig contain all settings. Use XcodeGen to spit out new xcode projects.  
 https://github.com/johndpope/swift-models/tree/stable/Inference     
-![Screenshot](Images/xcodegen.png)
+
+<img src="Images/debug.png" width="800">
+<img src="Images/project.png" width="800">
+<img src="Images/xcodegen.png" width="800">
+
 1. In the menu bar, select `File > Project Settings...`.
 2. Then, select `Legacy Build System` for Build Settings and click `Done`.
  
