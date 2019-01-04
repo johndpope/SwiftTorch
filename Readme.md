@@ -1,4 +1,6 @@
 #  SwiftPyTorch
+![Screenshot](Images/swiftTensorflow.png)
+![Screenshot](Images/pytorch-logo-flat.png)
 
 ## Install Swift for Tensorflow
 This project is based on Swift for Tensorflow. To install Swift for Tensorflow visit [https://github.com/tensorflow/swift/](https://github.com/tensorflow/swift/blob/master/Installation.md).
@@ -19,7 +21,7 @@ Take the following steps to install OpenAI Gym using Conda:
      
 ## Install these for gymai
 (if sdl2 fails / try proceeding without it)
-```
+```shell
 brew install cmake boost boost-python sdl2 swig wget
 ```
 
@@ -29,20 +31,24 @@ https://conda.io/docs/_downloads/conda-cheatsheet.pdf
 
       
 **Setting up miniconda**      
+```shell
 brew install wget      
 wget https://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh      
 chmod +x Miniconda3-latest-MacOSX-x86_64.sh      
 ./Miniconda3-latest-MacOSX-x86_64.sh      
+```
       
       
 **Add conda to user path**      
 for zsh       
+```shell
 code ~/.zshrc      
 export PATH="/Users/YOURUSERNAMENAMEHERE/miniconda3/bin:$PATH"      
+```
 RESTART TERMINAL!!      
 
 
-```
+```shell
 // https://conda.io/miniconda.html 
 conda create -n gymai2  python=2.7.9
 conda activate gymai2
@@ -58,8 +64,8 @@ pip install torchvision
 ```
 
 
-     
- // IMPORTANT - hack required to get  torchvision   to load testing / training data used in pytorch.swift
+**IMPORTANT**     
+ // hack required to get  torchvision   to load testing / training data used in Pytorch.swift
  // in your Users/admin/miniconda3/envs/gymai2/lib/python2.7/site-packages/
  // rename torchvision-0.2.1-py2.7.egg file to .zip - extract out torch ision folder to site-packages
      
