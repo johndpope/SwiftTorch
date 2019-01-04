@@ -1,4 +1,4 @@
-#  SwiftTorch
+#  SwiftPyTorch
 
 ## Install Swift for Tensorflow
 This project is based on Swift for Tensorflow. To install Swift for Tensorflow visit [https://github.com/tensorflow/swift/](https://github.com/tensorflow/swift/blob/master/Installation.md).
@@ -89,6 +89,6 @@ if you see
 Fatal error: 'try!' expression unexpectedly raised an error: Python exception: dlopen(/Users/johndpope/miniconda3/lib/python2.7/lib-dynload/_io.so, 2): Symbol not found:      
 __PyCodecInfo_GetIncrementalDecoder    
      
-try source activate gymai
+try conda activate gymai
 ![alt text](https://user-images.githubusercontent.com/289994/45266081-83081480-b423-11e8-8e06-57c0e4c27c63.png) 
 
