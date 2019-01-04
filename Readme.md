@@ -86,10 +86,16 @@ pip install torchvision
   rename **torchvision-0.2.1-py2.7.egg** file to    
       **torchvision-0.2.1-py2.7.zip**      
  unzip files to site-packages
-3. You will need to update variable customClassPath in PyTorch.swift to point to  hard coded path of project Sources folder.
-     ![Screenshot](Images/CustomClassPath.png)
-     
-To wire up xcode to connect the conda environment / we need to add pre-action to xcode schema. 
+3. You will need to update variable customClassPath in PyTorch.swift to point to  hard coded path of project Sources folder. Why? The app at runtime will read in the NeuralNet.py class
+     ![Screenshot](Images/CustomClassPath.png)**NeuralNet.py**    
+<img src="Images/NeuralNet.png" width="400">
+
+
+
+
+
+**Troubleshooting**     
+Ensure conda environment is correctly activate in pre-actions of xcode schema. 
          
 **Schema >  Run > Pre-actions**
 ```
@@ -98,11 +104,6 @@ conda activate gymai2
 
 
 <img src="Images/SwiftTorch.png" width="800">
-
-
-
-**NeuralNet.py**    
-<img src="Images/NeuralNet.png" width="400">
 
 
 
