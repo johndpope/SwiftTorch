@@ -1,9 +1,6 @@
 name: SwiftTorch
 options:
   bundleIdPrefix: com.swiftTorch
-configFiles:
-  Debug: debug.xcconfig
-  Release: debug.xcconfig
 
 targets:
   SwiftTorch:
@@ -16,8 +13,10 @@ targets:
       - framework: /Library/Developer/Toolchains/swift-latest/usr/lib/swift/macosx/libtensorflow_framework.so
       - framework: /Library/Developer/Toolchains/swift-latest/usr/lib/swift/macosx/libtensorflow.so
       - framework: libpython2.7.tbd
-    SUPPORTED_PLATFORMS: macosx
-
+    SWIFT_OPTIMIZATION_LEVEL: -O
+    LD_RUNPATH_SEARCH_PATHS: "/Library/Developer/Toolchains/swift-latest/usr/lib/swift/macosx"
+    OTHER_LDFLAGS:  -lpython
+    
 schemes:
   SwiftTorch:
     build:

@@ -26,7 +26,6 @@
 		FR_B41F6D739A11C9A5479C899D2D14D30B /* libtensorflow_framework.so */ = {isa = PBXFileReference; name = libtensorflow_framework.so; path = "/Library/Developer/Toolchains/swift-latest/usr/lib/swift/macosx/libtensorflow_framework.so"; sourceTree = "<group>"; };
 		FR_CE80D3F1FE70659CD43442D16021351B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		FR_DA0498000DD2003A9F9EC7D1D03D62A0 /* SwiftTorch */ = {isa = PBXFileReference; includeInIndex = 0; path = SwiftTorch; sourceTree = BUILT_PRODUCTS_DIR; };
-		FR_E18E7DEAFF9D20C77E28C5D8AB792B75 /* debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = debug.xcconfig; sourceTree = "<group>"; };
 		FR_F692611DB1D4EE1F7200922430DD4B54 /* NeuralNet.pyc */ = {isa = PBXFileReference; path = NeuralNet.pyc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,7 +59,6 @@
 			isa = PBXGroup;
 			children = (
 				G_337A41F78779A8AFCA090939A4C544AA /* Sources */,
-				G_7491C52C181E3B71A1F2496C5BA85299 /* SwiftTorch */,
 				G_DD6F7F2F21113F2AC641FB09418CFFA9 /* Frameworks */,
 				G_6D5A80F667FD6387740EF044B5D3DD88 /* Products */,
 			);
@@ -72,15 +70,6 @@
 				FR_DA0498000DD2003A9F9EC7D1D03D62A0 /* SwiftTorch */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		G_7491C52C181E3B71A1F2496C5BA85299 /* SwiftTorch */ = {
-			isa = PBXGroup;
-			children = (
-				FR_E18E7DEAFF9D20C77E28C5D8AB792B75 /* debug.xcconfig */,
-			);
-			name = SwiftTorch;
-			path = /Users/admin/Documents/gitWorkspace/SwiftTorch;
 			sourceTree = "<group>";
 		};
 		G_DD6F7F2F21113F2AC641FB09418CFFA9 /* Frameworks */ = {
@@ -172,6 +161,7 @@
 					"\".\"",
 					"\"/Library/Developer/Toolchains/swift-latest/usr/lib/swift/macosx\"",
 				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.swiftTorch.SwiftTorch;
 				SDKROOT = macosx;
@@ -187,6 +177,7 @@
 					"\".\"",
 					"\"/Library/Developer/Toolchains/swift-latest/usr/lib/swift/macosx\"",
 				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.swiftTorch.SwiftTorch;
 				SDKROOT = macosx;
@@ -195,7 +186,6 @@
 		};
 		BC_DD2BFA1631D91F9BFE969710296B585A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FR_E18E7DEAFF9D20C77E28C5D8AB792B75 /* debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -248,13 +238,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
 		BC_FD87C9B2BA4A86656C908F01ED90899A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FR_E18E7DEAFF9D20C77E28C5D8AB792B75 /* debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -298,6 +288,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				VALIDATE_PRODUCT = YES;
 			};
