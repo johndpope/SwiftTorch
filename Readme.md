@@ -1,14 +1,13 @@
 #  SwiftTorch
 
-
 ## Install Swift for Tensorflow
 This project is based on Swift for Tensorflow. To install Swift for Tensorflow visit [https://github.com/tensorflow/swift/](https://github.com/tensorflow/swift/blob/master/Installation.md).
 /Library/Developer/Toolchains/swift-latest/usr/lib/swift/macosx
 
 
-The Tensorflow library for Swift is published in the [stdlib/public/TensorFlow](https://github.com/apple/swift/tree/tensorflow/stdlib/public/TensorFlow) directory.
-
-Make sure to change the Xcode build system to legacy (File > Project Settings > Build System).
+Creating new xcode Projects using XcodeGen      
+https://github.com/johndpope/swift-models/tree/stable/Inference     
+![Screenshot](Images/xcodegen.png)
 
 ## Install OpenAI Gym
 Take the following steps to install OpenAI Gym using Virtualenv:
