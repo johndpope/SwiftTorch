@@ -26,7 +26,7 @@ brew install cmake boost boost-python sdl2 swig wget
 https://conda.io/docs/_downloads/conda-cheatsheet.pdf     
 
       
-**setting up miniconda**      
+**Setting up miniconda**      
 brew install wget      
 wget https://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh      
 chmod +x Miniconda3-latest-MacOSX-x86_64.sh      
@@ -56,7 +56,7 @@ pip install torchvision
 ```
      
  // IMPORTANT - hack required to get  torchvision   to load testing / training data used in pytorch.swift
- // in your Users/admin/miniconda3/envs/gymai/lib/python2.7/site-packages/
+ // in your Users/admin/miniconda3/envs/gymai2/lib/python2.7/site-packages/
  // rename torchvision-0.2.1-py2.7.egg file to .zip - extract out torch ision folder to site-packages
      
      
