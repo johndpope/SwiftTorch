@@ -17,8 +17,8 @@ For new projects you can run
  to spit out new xcode projects. Just update the Sources.  
 https://github.com/johndpope/swift-models/tree/stable/Inference     
 
-<img src="Images/debug.png" width="800">
-<img src="Images/project.png" width="800">
+
+<img src="Images/project2.png" width="800">
 
 Unfortunately - there's still a manual step to fix build system.
 1. In the menu bar, select `File > Project Settings...`.
