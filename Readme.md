@@ -81,9 +81,10 @@ pip install torchvision
 **IMPORTANT**  
 1.  Be sure to use python 2.7.9 to avoid missing python symbols  (__PyCodecInfo_GetIncrementalDecoder)   
 
-2. There's a hack required to get  torchvision   to load testing / training data used in Pytorch.swift
- in your Users/USERNAMEHERE/miniconda3/envs/gymai2/lib/python2.7/site-packages/
-  rename torchvision-0.2.1-py2.7.egg file to .zip - extract out torch ision folder to site-packages
+2. There's a hack required to get  torchvision   to load testing / training data used in Pytorch.swift.   
+ In your **Users/USERNAMEHERE/miniconda3/envs/gymai2/lib/python2.7/site-packages/**   
+  rename **torchvision-0.2.1-py2.7.egg** file to **.zip **-      
+ extract out torch vision folder to site-packages
 3. You will need to update variable customClassPath in PyTorch.swift to point to  hard coded path of project Sources folder.
      ![Screenshot](Images/CustomClassPath.png)
      
